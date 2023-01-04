@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+  <GameConditionDef>
+    <defName>WWE_Razor_Grass</defName>
+    <conditionClass>WWE.RegularEvents.RazorGrass</conditionClass>
+    <label>Razor Grass</label>
+    <description>The grass has turned sharp after all the walking you did on it. Beware the sharp grass for it might kill you</description>
+    <endMessage>The drought is ending.</endMessage>
+    <letterText>OH NO! The grass turned razor sharp\n\nSharp grass will damage all flesh beings when they walk on it.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>WWE_Hurricane</defName>
+    <conditionClass>WWE.RegularEvents.Hurricane</conditionClass>
+    <label>Hurricane</label>
+    <description>A hurricane has appeared, all player constructed roofs are in danger of being blown off</description>
+    <endMessage>The wind is subsiding.</endMessage>
+    <letterText>A hurricane has appeared, all player constructed roofs are in danger of being blown off</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>WWE_Fire_Rain</defName>
+    <conditionClass>WWE.RegularEvents.FireRain</conditionClass>
+    <label>Fire Rain</label>
+    <description>ITS RAINING FIRE</description>
+    <endMessage>The wind is subsiding.</endMessage>
+    <letterText>IT'S RAINING FIRE AAAAAAA</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>WWE_Jelly_Rain</defName>
+    <conditionClass>WWE.RegularEvents.JellyRain</conditionClass>
+    <label>Godly Jelly</label>
+    <description>royal jelly is falling from the skies</description>
+    <endMessage>The gods are done appeasing you</endMessage>
+    <letterText>The gods have rewarded you with drowning in royal jelly</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  
+  <GameConditionDef>
+    <defName>WWE_Meteor_Rain</defName>
+    <conditionClass>WWE.RegularEvents.TrueMeteorShower</conditionClass>
+    <label>Meteor Rain</label>
+    <description>royal jelly is falling from the skies</description>
+    <endMessage>The gods are done appeasing you</endMessage>
+    <letterText>The gods have rewarded you with drowning in royal jelly</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+
+</Defs>

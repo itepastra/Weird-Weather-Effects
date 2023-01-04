@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <WeatherDef>
+        <defName>Blizzard</defName>
+        <label>blizzard</label>
+        <description>A blizzard extinguishes fires, but pawns move very slowly and can hit nearly nothing.</description>
+        <temperatureRange>-999~-0.5</temperatureRange>
+        <snowRate>12</snowRate>
+        <windSpeedFactor>3.5</windSpeedFactor>
+        <accuracyMultiplier>0.05</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>1</perceivePriority>
+        <rainRate>1</rainRate>
+        <moveSpeedMultiplier>0.2</moveSpeedMultiplier>
+        <commonalityRainfallFactor>
+          <points>
+            <li>(0, 0)</li>
+            <li>(300,0.5)</li>
+            <li>(1300, 1)</li>
+          </points>
+        </commonalityRainfallFactor>
+        <ambientSounds>
+          <li>Ambient_Wind_Storm</li>
+        </ambientSounds>
+        <overlayClasses>
+          <li>WeatherOverlay_SnowHard</li>
+        </overlayClasses>
+        <!-- Colors are Overcast -->
+        <skyColorsDay>
+          <sky>(0.8,0.8,0.8)</sky>
+          <shadow>(0.92,0.92,0.92)</shadow>
+          <overlay>(0.7,0.7,0.7)</overlay>
+          <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+          <sky>(1,1,1)</sky>
+          <shadow>(0.92,0.92,0.92)</shadow>
+          <overlay>(0.6,0.6,0.6)</overlay>
+          <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+          <sky>(0.35,0.40,0.45)</sky>
+          <shadow>(0.92,0.92,0.92)</shadow>
+          <overlay>(0.5,0.5,0.5)</overlay>
+          <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+          <sky>(0.35,0.40,0.45)</sky>
+          <shadow>(0.92,0.92,0.92)</shadow>
+          <overlay>(0.5,0.5,0.5)</overlay>
+          <saturation>0.9</saturation>
+        </skyColorsNightMid>
+      </WeatherDef>
+
+</Defs>

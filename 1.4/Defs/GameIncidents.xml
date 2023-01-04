@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+  <IncidentDef>
+    <defName>WWE_ultra_termites</defName>
+    <label>ultra termites</label>
+    <workerClass>WWE.InstantEvents.Termites</workerClass>
+    <letterLabel>Ultra Termites</letterLabel>
+    <letterText>A group of ultra termites decided to feast on your map, they ate a lot of your flammable goods</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <category>Misc</category>
+    <targetTags>
+        <li>Map_PlayerHome</li>
+    </targetTags>
+  </IncidentDef>
+
+
+</Defs>
