@@ -55,16 +55,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FireRain.cs" />
-    <Compile Include="JellyRain.cs" />
-    <Compile Include="Hurricane.cs" />
-    <Compile Include="Mountain_Poisoning_Hediff.cs" />
-    <Compile Include="RazorGrass.cs" />
+    <Compile Include="HediffGivers\Transitioning_Hediff.cs" />
+    <Compile Include="Weather\FireRain.cs" />
+    <Compile Include="Weather\JellyRain.cs" />
+    <Compile Include="Weather\Hurricane.cs" />
+    <Compile Include="HediffGivers\Mountain_Poisoning_Hediff.cs" />
+    <Compile Include="Weather\RazorGrass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Termites.cs" />
-    <Compile Include="ThingRain.cs" />
-    <Compile Include="TrueMeteorShower.cs" />
+    <Compile Include="Weather\Termites.cs" />
+    <Compile Include="Weather\ThingRain.cs" />
+    <Compile Include="Weather\TrueMeteorShower.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

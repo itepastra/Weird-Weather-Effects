@@ -50,12 +50,32 @@
     <defName>WWE_Meteor_Rain</defName>
     <conditionClass>WWE.RegularEvents.TrueMeteorShower</conditionClass>
     <label>Meteor Rain</label>
-    <description>royal jelly is falling from the skies</description>
+    <description>Meteors of components are falling from the skies</description>
     <endMessage>The gods are done appeasing you</endMessage>
     <letterText>The gods have rewarded you with drowning in royal jelly</letterText>
     <letterDef>NegativeEvent</letterDef>
     <canBePermanent>true</canBePermanent>
   </GameConditionDef>
 
+  <GameConditionDef>
+    <defName>WWE_Genderfluid_Rain</defName>
+    <label>GenderFluid rain</label>
+    <description>Genderfluid is pooring down, drinking it will change pawns sex but not gender</description>
+    <endMessage>The rain seems to have stopped</endMessage>
+    <letterText>The gender has become fluid</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  
+  <GameConditionDef>
+    <defName>WWE_Poison_Mountains</defName>
+    <label>Poison Mountains</label>
+    <description>The Mountains became toxic, breathing the air seems to be deadly</description>
+    <endMessage>The mountain roof has stopped excreting toxic air</endMessage>
+    <letterText>the air is deadly</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
 
 </Defs>
