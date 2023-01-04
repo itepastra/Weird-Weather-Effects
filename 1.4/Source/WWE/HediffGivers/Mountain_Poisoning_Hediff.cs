@@ -40,8 +40,6 @@ namespace WWE.HediffGivers
             }
             else if (h != null && rooftype == null)
             {
-                // remove severity if outside
-                //HealthUtility.AdjustSeverity(pawn, hediff, -0.0001f);
                 h.Severity -= 0.0001f;
             }
 
