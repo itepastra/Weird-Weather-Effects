@@ -20,16 +20,21 @@ namespace WWE.HediffGivers
 
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            Hediff h = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
             IntVec3 pos = pawn.Position;
             if (pos == defaultVec) { return; }
+            if (!pawn.Map.GameConditionManager.ConditionIsActive(GameConditionDef.Named("WWE_Poison_Mountains")))
+            {
+                return;
+            }
+
+            Hediff h = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
             RoofDef rooftype = pos.GetRoof(pawn.Map);
             if (rooftype == RoofDefOf.RoofRockThick)
             {
                 // add severity if in the mountains
                 HealthUtility.AdjustSeverity(pawn, hediff, 0.0005f);
             }
-            else if (rooftype == RoofDefOf.RoofConstructed)
+            else if (h != null && rooftype == RoofDefOf.RoofConstructed && h.Severity > 0.5f)
             {
                 h.Severity = Mathf.Clamp(h.Severity-0.0001f, 0.5f, 1.0f);
             }
