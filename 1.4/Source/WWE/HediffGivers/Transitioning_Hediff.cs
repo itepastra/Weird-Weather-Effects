@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +14,15 @@ namespace WWE.HediffGivers
     {
         private const int TransitionCheckInterval = 420;
 
-        private static IntVec3 defaultVec = new IntVec3(-1000, -1000, -1000);
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            IntVec3 pos = pawn.Position;
-            if (pos == defaultVec) { return; }
+            if (pawn.IsWorldPawn()) { return; }
             if (!pawn.Map.GameConditionManager.ConditionIsActive(GameConditionDef.Named("WWE_Genderfluid_Rain")))
             {
                 return;
             }
+
+            IntVec3 pos = pawn.Position;
             Hediff h = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
             if (pawn.Map.roofGrid.Roofed(pos))
             {
